@@ -31,6 +31,7 @@ class MenuViewController: UIViewController {
     
     func setupCellData() {
         cells.append("Basic")
+        cells.append("Colorized")
     }
 }
 
@@ -60,6 +61,7 @@ extension MenuViewController: UITableViewDataSource {
         var cell = tableView.dequeueReusableCell(withIdentifier: "spriteTourCell")
         if cell == nil {
             cell = UITableViewCell(style: .default, reuseIdentifier: "spriteTourCell")
+            cell?.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         }
         cell!.textLabel?.text = self.cells[indexPath.row]
         return cell!

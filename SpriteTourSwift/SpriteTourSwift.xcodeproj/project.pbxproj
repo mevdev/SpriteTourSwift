@@ -14,6 +14,7 @@
 		80118FD52584CEA90005FFB2 /* APLBasicSprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80118FD42584CEA90005FFB2 /* APLBasicSprites.swift */; };
 		80118FDA2584CEE30005FFB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80118FD92584CEE30005FFB2 /* ViewController.swift */; };
 		80B428C22584D726006B4859 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B428C12584D726006B4859 /* MenuViewController.swift */; };
+		80B428C52584DB1D006B4859 /* ColorizedAnimatingSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B428C42584DB1D006B4859 /* ColorizedAnimatingSprite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		80118FD42584CEA90005FFB2 /* APLBasicSprites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APLBasicSprites.swift; sourceTree = "<group>"; };
 		80118FD92584CEE30005FFB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80B428C12584D726006B4859 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		80B428C42584DB1D006B4859 /* ColorizedAnimatingSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedAnimatingSprite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				80118FD42584CEA90005FFB2 /* APLBasicSprites.swift */,
+				80B428C42584DB1D006B4859 /* ColorizedAnimatingSprite.swift */,
 			);
 			path = "Scene Classes";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B428C52584DB1D006B4859 /* ColorizedAnimatingSprite.swift in Sources */,
 				80118FDA2584CEE30005FFB2 /* ViewController.swift in Sources */,
 				80118FB62584CE020005FFB2 /* AppDelegate.swift in Sources */,
 				80118FD52584CEA90005FFB2 /* APLBasicSprites.swift in Sources */,

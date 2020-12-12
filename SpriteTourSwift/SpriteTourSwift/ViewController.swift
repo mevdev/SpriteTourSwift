@@ -36,25 +36,12 @@ class ViewController: UIViewController {
     }
     
     func drawScene(_ size: CGSize) -> SKScene {
-        return APLBasicSprites(size: size)
-//        skView.showsFPS = true
-//        skView.showsNodeCount = true
-//        skView.showsDrawCount = true
-//
-//        let size = skView.bounds.size
-//        let scene: SKScene =
+        switch self.indexSelected {
+        case 0: return APLBasicSprites(size: size)
+        case 1: return ColorizedAnimatingSprite(size: size)
+        default: return APLBasicSprites(size: size)
+        }
         
-//        switch (self.indexSelected) {
-//            case 0: scene = APLBasicSprites(sceneWithSize: size)
-//            case 1:
-//                scene = [APLColorizedSprites sceneWithSize:size];
-//                break;
-//
-//            case 2:
-//                scene = [ColorizedAnimatingSprite sceneWithSize:size];
-//                break;
-//
-//
 //            case 3:
 //                scene = [APLResizingSprites sceneWithSize:size];
 //                break;
