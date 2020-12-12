@@ -32,6 +32,7 @@ class MenuViewController: UIViewController {
     func setupCellData() {
         cells.append("Basic")
         cells.append("Colorized")
+        cells.append("Animated Color")
     }
 }
 

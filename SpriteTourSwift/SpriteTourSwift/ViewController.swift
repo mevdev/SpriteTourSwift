@@ -38,7 +38,8 @@ class ViewController: UIViewController {
     func drawScene(_ size: CGSize) -> SKScene {
         switch self.indexSelected {
         case 0: return APLBasicSprites(size: size)
-        case 1: return ColorizedAnimatingSprite(size: size)
+        case 1: return APLColorizedSprites(size: size)
+        case 2: return ColorizedAnimatingSprite(size: size)
         default: return APLBasicSprites(size: size)
         }
         
