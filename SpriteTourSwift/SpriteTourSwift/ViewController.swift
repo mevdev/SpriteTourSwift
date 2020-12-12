@@ -11,13 +11,15 @@ import SpriteKit
 class ViewController: UIViewController {
     
     var indexSelected: Int = 0
+    var sceneTitle: String = ""
     
     override func viewDidLoad() {
+        self.title = sceneTitle
         super.viewDidLoad()
         let skView = SKView()
         self.view.addSubview(skView)
         skView.translatesAutoresizingMaskIntoConstraints = false
-        skView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        skView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         skView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         skView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         skView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
@@ -86,7 +88,4 @@ class ViewController: UIViewController {
         }
     }
 
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
 }
