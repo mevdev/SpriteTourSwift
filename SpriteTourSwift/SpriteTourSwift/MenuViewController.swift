@@ -33,6 +33,7 @@ class MenuViewController: UIViewController {
         cells.append("Basic")
         cells.append("Colorized")
         cells.append("Animated Color")
+        cells.append("Resizing")
     }
 }
 

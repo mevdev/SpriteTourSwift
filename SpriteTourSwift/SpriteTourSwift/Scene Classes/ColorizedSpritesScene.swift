@@ -1,5 +1,5 @@
 //
-//  ColorizedAnimatingSprite.swift
+//  ColorizedAnimatingSpritesScene.swift
 //  SpriteTourSwift
 //
 //  Created by Robert Linnemann on 12/12/20.
@@ -7,7 +7,7 @@
 
 import SpriteKit
 
-class APLColorizedSprites: SKScene {
+class ColorizedSpritesScene: SKScene {
     
     var spriteTemplate: SKSpriteNode?
     

@@ -1,5 +1,5 @@
 //
-//  APLBasicSprites.swift
+//  BasicSpritesScene.swift
 //  Sprite Tour
 //
 //  Created by Robert Linnemann on 12/12/20.
@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-class APLBasicSprites: SKScene {
+class BasicSpritesScene: SKScene {
     
     override func didMove(to view: SKView) {
         self.backgroundColor = .black
@@ -23,7 +23,7 @@ class APLBasicSprites: SKScene {
         
         sprite.position = CGPoint(x: self.frame.midX - 80.0, y: self.frame.midY)
         self.addChild(sprite)
-        self.addDescription(NSLocalizedString("Texture Sprite", comment: ""), sprite: sprite)
+        self.addDescription(NSLocalizedString("Texture Sprite", comment: ""), toSprite: sprite)
     }
     
     func addColoredSprite() {
@@ -31,10 +31,10 @@ class APLBasicSprites: SKScene {
         let sprite = SKSpriteNode(color: .red, size: CGSize(width: 128, height: 128))
         sprite.position = CGPoint(x: self.frame.midX + 80.0, y: self.frame.midY)
         self.addChild(sprite)
-        self.addDescription(NSLocalizedString("Color Sprite", comment: ""), sprite: sprite)
+        self.addDescription(NSLocalizedString("Color Sprite", comment: ""), toSprite: sprite)
     }
     
-    func addDescription(_ description: String, sprite: SKSpriteNode) {
+    func addDescription(_ description: String, toSprite sprite: SKSpriteNode) {
         let myLabel = SKLabelNode(fontNamed: "Helvetica")
         myLabel.text = description
         myLabel.fontSize = 18.0

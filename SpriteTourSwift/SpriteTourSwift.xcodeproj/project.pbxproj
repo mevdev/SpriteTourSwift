@@ -11,11 +11,12 @@
 		80118FBF2584CE020005FFB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80118FBE2584CE020005FFB2 /* Assets.xcassets */; };
 		80118FC22584CE020005FFB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80118FC02584CE020005FFB2 /* LaunchScreen.storyboard */; };
 		80118FCE2584CE790005FFB2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80118FCD2584CE790005FFB2 /* SpriteKit.framework */; };
-		80118FD52584CEA90005FFB2 /* APLBasicSprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80118FD42584CEA90005FFB2 /* APLBasicSprites.swift */; };
+		80118FD52584CEA90005FFB2 /* BasicSpritesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80118FD42584CEA90005FFB2 /* BasicSpritesScene.swift */; };
 		80118FDA2584CEE30005FFB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80118FD92584CEE30005FFB2 /* ViewController.swift */; };
-		802D89642584E63B00188126 /* ColorizedAnimatingSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802D89632584E63B00188126 /* ColorizedAnimatingSprite.swift */; };
+		802D89642584E63B00188126 /* ColorizedAnimatingSpriteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802D89632584E63B00188126 /* ColorizedAnimatingSpriteScene.swift */; };
+		802D89672584EA1300188126 /* ResizingSpritesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802D89662584EA1300188126 /* ResizingSpritesScene.swift */; };
 		80B428C22584D726006B4859 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B428C12584D726006B4859 /* MenuViewController.swift */; };
-		80B428C52584DB1D006B4859 /* APLColorizedSprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B428C42584DB1D006B4859 /* APLColorizedSprites.swift */; };
+		80B428C52584DB1D006B4859 /* ColorizedSpritesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B428C42584DB1D006B4859 /* ColorizedSpritesScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +26,12 @@
 		80118FC12584CE020005FFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80118FC32584CE020005FFB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80118FCD2584CE790005FFB2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		80118FD42584CEA90005FFB2 /* APLBasicSprites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APLBasicSprites.swift; sourceTree = "<group>"; };
+		80118FD42584CEA90005FFB2 /* BasicSpritesScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSpritesScene.swift; sourceTree = "<group>"; };
 		80118FD92584CEE30005FFB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		802D89632584E63B00188126 /* ColorizedAnimatingSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedAnimatingSprite.swift; sourceTree = "<group>"; };
+		802D89632584E63B00188126 /* ColorizedAnimatingSpriteScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedAnimatingSpriteScene.swift; sourceTree = "<group>"; };
+		802D89662584EA1300188126 /* ResizingSpritesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingSpritesScene.swift; sourceTree = "<group>"; };
 		80B428C12584D726006B4859 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		80B428C42584DB1D006B4859 /* APLColorizedSprites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APLColorizedSprites.swift; sourceTree = "<group>"; };
+		80B428C42584DB1D006B4859 /* ColorizedSpritesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedSpritesScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +88,10 @@
 		80118FD72584CEAD0005FFB2 /* Scene Classes */ = {
 			isa = PBXGroup;
 			children = (
-				80118FD42584CEA90005FFB2 /* APLBasicSprites.swift */,
-				80B428C42584DB1D006B4859 /* APLColorizedSprites.swift */,
-				802D89632584E63B00188126 /* ColorizedAnimatingSprite.swift */,
+				80118FD42584CEA90005FFB2 /* BasicSpritesScene.swift */,
+				80B428C42584DB1D006B4859 /* ColorizedSpritesScene.swift */,
+				802D89632584E63B00188126 /* ColorizedAnimatingSpriteScene.swift */,
+				802D89662584EA1300188126 /* ResizingSpritesScene.swift */,
 			);
 			path = "Scene Classes";
 			sourceTree = "<group>";
@@ -162,11 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80B428C52584DB1D006B4859 /* APLColorizedSprites.swift in Sources */,
-				802D89642584E63B00188126 /* ColorizedAnimatingSprite.swift in Sources */,
+				80B428C52584DB1D006B4859 /* ColorizedSpritesScene.swift in Sources */,
+				802D89642584E63B00188126 /* ColorizedAnimatingSpriteScene.swift in Sources */,
 				80118FDA2584CEE30005FFB2 /* ViewController.swift in Sources */,
 				80118FB62584CE020005FFB2 /* AppDelegate.swift in Sources */,
-				80118FD52584CEA90005FFB2 /* APLBasicSprites.swift in Sources */,
+				802D89672584EA1300188126 /* ResizingSpritesScene.swift in Sources */,
+				80118FD52584CEA90005FFB2 /* BasicSpritesScene.swift in Sources */,
 				80B428C22584D726006B4859 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
