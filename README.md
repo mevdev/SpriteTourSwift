@@ -5,6 +5,8 @@ This is a Swift 5 (and iOS) port of Apple's sample code called Sprite Tour which
 
 https://developer.apple.com/download/more/?name=WWDC%202013
 
+![Screenshots of Sprite Tour](SpriteTour.jpg)
+
 Each scene demonstrates one major concept. You can learn one technique from each sample, then decide which techniques are useful and how to combine them together.
 
 - APLBasicSprites Shows how to create a default textured or untextured sprite.
