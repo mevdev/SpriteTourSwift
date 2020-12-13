@@ -41,17 +41,10 @@ class ViewController: UIViewController {
         case 1: return ColorizedSpritesScene(size: size)
         case 2: return ColorizedAnimatingSpriteScene(size: size)
         case 3: return ResizingSpritesScene(size: size)
+        case 4: return SpriteAnchorsScene(size: size)
         default: return BasicSpritesScene(size: size)
         }
-        
-//            case 3:
-//                scene = [APLResizingSprites sceneWithSize:size];
-//                break;
-//
-//            case 4:
-//                scene = [APLSpriteAnchors sceneWithSize:size];
-//                break;
-//
+
 //            case 5:
 //                scene = [APLBlendingSprites sceneWithSize:size];
 //                break;
