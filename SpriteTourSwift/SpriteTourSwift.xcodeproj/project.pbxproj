@@ -16,6 +16,8 @@
 		802D89642584E63B00188126 /* ColorizedAnimatingSpriteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802D89632584E63B00188126 /* ColorizedAnimatingSpriteScene.swift */; };
 		802D89672584EA1300188126 /* ResizingSpritesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802D89662584EA1300188126 /* ResizingSpritesScene.swift */; };
 		802EFD1F2585D54100F76B37 /* SpriteAnchorsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EFD1E2585D54100F76B37 /* SpriteAnchorsScene.swift */; };
+		803BF4A02585EB7400161998 /* BlendingSpritesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803BF49F2585EB7400161998 /* BlendingSpritesScene.swift */; };
+		803BF4A32585EFB200161998 /* AnimatingSpritesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803BF4A22585EFB200161998 /* AnimatingSpritesScene.swift */; };
 		80B428C22584D726006B4859 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B428C12584D726006B4859 /* MenuViewController.swift */; };
 		80B428C52584DB1D006B4859 /* ColorizedSpritesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B428C42584DB1D006B4859 /* ColorizedSpritesScene.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,8 @@
 		802D89632584E63B00188126 /* ColorizedAnimatingSpriteScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedAnimatingSpriteScene.swift; sourceTree = "<group>"; };
 		802D89662584EA1300188126 /* ResizingSpritesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizingSpritesScene.swift; sourceTree = "<group>"; };
 		802EFD1E2585D54100F76B37 /* SpriteAnchorsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteAnchorsScene.swift; sourceTree = "<group>"; };
+		803BF49F2585EB7400161998 /* BlendingSpritesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendingSpritesScene.swift; sourceTree = "<group>"; };
+		803BF4A22585EFB200161998 /* AnimatingSpritesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingSpritesScene.swift; sourceTree = "<group>"; };
 		80B428C12584D726006B4859 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		80B428C42584DB1D006B4859 /* ColorizedSpritesScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedSpritesScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +99,8 @@
 				802D89632584E63B00188126 /* ColorizedAnimatingSpriteScene.swift */,
 				802D89662584EA1300188126 /* ResizingSpritesScene.swift */,
 				802EFD1E2585D54100F76B37 /* SpriteAnchorsScene.swift */,
+				803BF49F2585EB7400161998 /* BlendingSpritesScene.swift */,
+				803BF4A22585EFB200161998 /* AnimatingSpritesScene.swift */,
 			);
 			path = "Scene Classes";
 			sourceTree = "<group>";
@@ -171,8 +177,10 @@
 				80B428C52584DB1D006B4859 /* ColorizedSpritesScene.swift in Sources */,
 				802D89642584E63B00188126 /* ColorizedAnimatingSpriteScene.swift in Sources */,
 				80118FDA2584CEE30005FFB2 /* ViewController.swift in Sources */,
+				803BF4A02585EB7400161998 /* BlendingSpritesScene.swift in Sources */,
 				80118FB62584CE020005FFB2 /* AppDelegate.swift in Sources */,
 				802D89672584EA1300188126 /* ResizingSpritesScene.swift in Sources */,
+				803BF4A32585EFB200161998 /* AnimatingSpritesScene.swift in Sources */,
 				80118FD52584CEA90005FFB2 /* BasicSpritesScene.swift in Sources */,
 				802EFD1F2585D54100F76B37 /* SpriteAnchorsScene.swift in Sources */,
 				80B428C22584D726006B4859 /* MenuViewController.swift in Sources */,

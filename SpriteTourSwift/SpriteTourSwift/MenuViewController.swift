@@ -35,6 +35,8 @@ class MenuViewController: UIViewController {
         cells.append("Animated Color")
         cells.append("Resizing")
         cells.append("Anchors")
+        cells.append("Blending")
+        cells.append("Animated")
     }
 }
 

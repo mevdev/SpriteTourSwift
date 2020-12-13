@@ -31,7 +31,7 @@ class ResizingSpritesScene: SKScene {
         customSprite.centerRect = CGRect(x: 12.0/28.0, y: 12.0/28.0, width: 4.0/28.0, height: 4.0/28.0)
         self.addChild(customSprite)
         customSprite.run(resizeSpritesAction)
-        self.addDescription("Resized with custom stretching", toSprite: customSprite)
+        self.addDescription("of each sprite node.", toSprite: customSprite)
     }
     
     func resizeSpriteAction(_ texture: SKTexture) -> SKAction {
@@ -54,6 +54,7 @@ class ResizingSpritesScene: SKScene {
         myLabel.text = description
         myLabel.fontSize = 18.0
         myLabel.position = CGPoint(x: 0.0, y: 0.0)
+        myLabel.zPosition = 1
         sprite.addChild(myLabel)
     }
 

@@ -33,7 +33,7 @@ class SpriteAnchorsScene: SKScene {
     
     func addAnchorDotToSprite(_ sprite: SKSpriteNode) {
         let dot = SKShapeNode()
-        
+        dot.zPosition = 1
         let myPath = CGMutablePath()
         myPath.addArc(center: CGPoint(x:0, y:0), radius: 10, startAngle: 0, endAngle: CGFloat(M_2_PI), clockwise: true, transform: .identity)
         
@@ -71,6 +71,7 @@ class SpriteAnchorsScene: SKScene {
         let sequence = SKAction.sequence([moveAnchorRight, moveAnchorUp, moveAnchorLeft, moveAnchorDown])
         return SKAction.repeatForever(sequence)
     }
+    
     func addSceneDescriptionLabel() {
         let myLabel = SKLabelNode(fontNamed: "Helvetica")
         myLabel.text = NSLocalizedString("The dots mark the actual position", comment: "")
@@ -84,35 +85,5 @@ class SpriteAnchorsScene: SKScene {
         nextLabel.position = CGPoint(x: self.frame.midX, y: 50.0)
         self.addChild(nextLabel)
     }
-
-//
-//    - (SKAction *)newAnimateAnchorAction
-//    {
-//        // Normally, you can't directly animate an anchor point, but you can build a custom action to so do.
-//        // This method builds a bunch of custom actions, then combines them in a repeating sequence.
-//
-//        SKAction *moveAnchorRight = [SKAction customActionWithDuration:1.0 actionBlock:^(SKNode *node, CGFloat elapsedTime) {
-//            SKSpriteNode *sprite = (SKSpriteNode*) node;
-//            sprite.anchorPoint = CGPointMake(elapsedTime,0.0);
-//        }];
-//
-//        SKAction *moveAnchorUp = [SKAction customActionWithDuration:1.0 actionBlock:^(SKNode *node, CGFloat elapsedTime) {
-//            SKSpriteNode *sprite = (SKSpriteNode*) node;
-//            sprite.anchorPoint = CGPointMake(1.0,elapsedTime);
-//        }];
-//
-//        SKAction *moveAnchorLeft = [SKAction customActionWithDuration:1.0 actionBlock:^(SKNode *node, CGFloat elapsedTime) {
-//            SKSpriteNode *sprite = (SKSpriteNode*) node;
-//            sprite.anchorPoint = CGPointMake(1.0-elapsedTime,1.0);
-//        }];
-//
-//        SKAction *moveAnchorDown = [SKAction customActionWithDuration:1.0 actionBlock:^(SKNode *node, CGFloat elapsedTime) {
-//            SKSpriteNode *sprite = (SKSpriteNode*) node;
-//            sprite.anchorPoint = CGPointMake(0,1.0-elapsedTime);
-//        }];
-//
-//        SKAction *sequence = [SKAction sequence:@[moveAnchorRight, moveAnchorUp, moveAnchorLeft, moveAnchorDown]];
-//        return [SKAction repeatActionForever:sequence];
-//    }
-
+    
 }
